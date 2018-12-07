@@ -4,7 +4,7 @@ author: "Abdul Abad"
 date: "October 10, 2018"
 output: github_document
 ---
-#Part 1
+##Part 1
 
 ```{r}
 getwd()
@@ -68,7 +68,7 @@ K6$cluster <- as.factor(K6$cluster)
 K7 <- dplyr::count(K4, cluster)
 ```
 
-#Part 2
+##Part 2
 
 ```{r}
 library(tidyverse)
@@ -94,7 +94,7 @@ fit3 <- kmeans(L2, 2)
 
 ```
 
-#Part 3
+##Part 3
 
 ```{r}
 library(vcd)
