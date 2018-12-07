@@ -2,8 +2,9 @@
 title: "Assignment 3 Submission"
 author: "Abdul Abad"
 date: "October 10, 2018"
-output: html_document
+output: github_document
 ---
+#Part 1
 
 ```{r}
 getwd()
@@ -20,6 +21,7 @@ K1 <- read.csv("Class_Motivation.csv", header = TRUE)
 ```
 
 ```{r}
+
 K2 <- dplyr::select(K1, 2:6)
 ```
 
@@ -28,11 +30,14 @@ K3 <- na.omit(K2)
 ```
 
 ```{r}
+
 K3 <- scale(K3)
 ```
 
 ```{r}
+
 fit <- kmeans(K3, 2)
+
 ```
 
 ```{r}
@@ -40,7 +45,9 @@ K4 <- data.frame(K3, fit$cluster)
 ```
 
 ```{r}
+
 names(K4) <- c("1", "2", "3", "4", "5", "cluster")
+
 ```
 
 ```{r}
@@ -84,6 +91,7 @@ library(ggmap)
 L2 <- geocode(as.character(L1$place), output = "latlon", source = "dsk")
 #Generate clusters for lat/lon
 fit3 <- kmeans(L2, 2)
+
 ```
 
 #Part 3
