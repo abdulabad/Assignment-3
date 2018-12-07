@@ -2,8 +2,9 @@
 title: "Assignment 3 Submission"
 author: "Abdul Abad"
 date: "October 10, 2018"
-output: html_document
+output: github_document
 ---
+#Part 1
 
 ```{r}
 getwd()
